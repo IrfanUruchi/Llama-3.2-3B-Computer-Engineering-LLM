@@ -52,18 +52,19 @@ outputs = model.generate(**inputs, max_new_tokens=150, temperature=0.8, top_k=50
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 
-##Fine-tuning details
+
+## Fine-tuning details
 
 Datesets i used for fine tuning: Wikitext-2-raw-v1, STEM-AI-mtl (Electrical Engineering), and additional computer science and computer engineering data.
 
 For fine tuning was done with LoRA adapters
 
-##Model file 
+## Model file 
 The model is provided as a safetensors file and/or compressed as a 7z archive (1.9GB)
 Download the model directly via LFS or by downloading the file from repo.
 
 
-##License and Attribution
+## License and Attribution
 
 This model is a derivative work based on Meta's LLaMA 3.2 3B and is distributed under the LLaMA 3.2 Community License. Please see the LICENSE file for full details.
 
@@ -74,7 +75,7 @@ For more information on the base model, please visit :
 
 https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE
 
-##Known Limitations
+## Known Limitations
 
 The model is specialized for computer engineering and electical engineering topics and may not work as well on unrelated subjects, some outputs may require further prompt engineering for optimal results.
 And occasional repetition or other artifacts may be present due to fine-tuning constraints.
