@@ -16,6 +16,7 @@ Ensure you have Git LFS installed for handling large model files:
 git lfs install
 
 pip install -U bitsandbytes transformers torch accelerate
+
 ```
 
 ## Usage
@@ -23,7 +24,9 @@ pip install -U bitsandbytes transformers torch accelerate
 Clone the repository and pull the model files using Git LFS(for more pro users):
 
 ```bash
+
 git lfs install
+
 pip install -U bitsandbytes transformers torch accelerate
 ```
 Or just download the files one by one.
@@ -32,15 +35,17 @@ Or just download the files one by one.
 Then load the model locally 
 
 ```python
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-local_path = "./Llama-3.2-3B-Computer-Engineering-LLM" #Make sure you are in the same directory as the downloaded model and config files else will give error
 
+local_path = "./Llama-3.2-3B-Computer-Engineering-LLM" #Make sure you are in the same directory as the downloaded model and config files else will give error
 model = AutoModelForCausalLM.from_pretrained(local_path, device_map="auto", torch_dtype=torch.float16, local_files_only=True)
 tokenizer = AutoTokenizer.from_pretrained(local_path, use_fast=False, local_files_only=True)
 
-# An example of a usage , this is a prompt
+# An example , this is a prompt to use the LLM after laoding 
 prompt = "What is a kernel?"
+
 inputs = tokenizer(prompt, return_tensors="pt")
 outputs = model.generate(**inputs, max_new_tokens=150, temperature=0.8, top_k=50, top_p=0.92)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
