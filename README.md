@@ -15,8 +15,6 @@ Ensure you have Git LFS installed for handling large model files:
 
 git lfs install
 
-pip install -U bitsandbytes transformers torch accelerate
-
 ```
 
 ## Usage
@@ -25,7 +23,6 @@ Clone the repository and pull the model files using Git LFS(for more pro users):
 
 ```bash
 
-git lfs install
 
 pip install -U bitsandbytes transformers torch accelerate
 ```
