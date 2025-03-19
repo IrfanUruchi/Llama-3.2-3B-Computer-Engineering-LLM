@@ -19,17 +19,17 @@ git lfs install
 
 ## Usage
 
-Clone the repository and pull the model files using Git LFS(for more pro users):
+Clone the repository and pull the model files using Git LFS(for pro users):
 
 ```bash
 
 
 pip install -U bitsandbytes transformers torch accelerate
 ```
-Or just download the files one by one.
+Or just download the files one by one(if you have hard time with LFS).
 
 
-Then load the model locally 
+Then load the model locally a simple sample test how you can do it 
 
 ```python
 
