@@ -7,13 +7,19 @@ A custom fine-tuned large language model based on Meta's LLaMA 3.2 3B, specializ
 ---
 
 <div align="center">
+  <a href="https://github.com/IrfanUruchi/Llama-3.2-3B-Computer-Engineering-LLM">
+    <img src="https://img.shields.io/badge/🔗_GitHub-Repo-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <a href="https://huggingface.co/Irfanuruchi/Llama-3.2-3B-Computer-Engineering-LLM">
+    <img src="https://img.shields.io/badge/🤗_HuggingFace-Model_Repo-FFD21F?style=for-the-badge" alt="HuggingFace">
+  </a>
+  <br>
   <img src="https://img.shields.io/badge/Model_Size-3.2B_parameters-blue" alt="Model Size">
   <img src="https://img.shields.io/badge/Quantization-4bit-green" alt="Quantization">
   <img src="https://img.shields.io/badge/Adapter-LoRA-orange" alt="Adapter">
   <img src="https://img.shields.io/badge/Context-8k-lightgrey" alt="Context">
   <img src="https://img.shields.io/badge/License-Llama_3.2-yellow" alt="License">
 </div>
-
 ---
 
 ## Model Details
